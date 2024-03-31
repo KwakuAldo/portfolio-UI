@@ -835,13 +835,13 @@ p {
   color: hsla(234, 30%, 18%, 1);
 }
 
+.text-light {
+  color: hsla(210, 14%, 58%, 1);
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-light {
-  color: hsla(210, 14%, 58%, 1);
 }
 
 .underline {
@@ -922,6 +922,10 @@ p {
 
   .lg\:w-auto {
     width: auto;
+  }
+
+  .lg\:w-\[42\.563rem\] {
+    width: 42.563rem;
   }
 
   .lg\:flex-row {
