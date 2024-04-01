@@ -7,15 +7,18 @@
     <title>Blog</title>
 </head>
 <body class="w-[21.5rem] max-w-[72rem] mx-auto lg:w-auto">
-    <header class="flex justify-end p-3">
-        <button class="lg:hidden">
+    <header class="relative flex justify-end p-3">
+        <button class="lg:hidden" id="hamburger-menu">
             <img src="../images/menu.png" alt="">
         </button>
-        <nav class="hidden lg:block">
-            <ul class="flex justify-between text-xl font-medium w-80">
-                <li><a class="hover:text-pinkish active:text-pinkish" href="index.html">Home</a></li>
-                <li><a class="hover:text-pinkish active:text-pinkish" href="works.html">Works</a></li>
-                <li><a class="active hover:text-pinkish target:text-pinkish" href="blog.html">Blog</a></li>
+        <nav class="hidden absolute right-0 flex-col items-start h-svh lg:h-auto bg-white lg:static lg:flex" id="navbar">
+            <button class="self-end pr-3 lg:hidden" id="menu-close">
+                <img src="images/icon-close-menu.svg" alt="">
+            </button>
+            <ul class="flex flex-col pl-5 mt-12 lg:flex-row justify-between text-xl font-medium w-80">
+                <li class="mb-5"><a class="hover:text-pinkish active:text-pinkish" href="index.html">Home</a></li>
+                <li class="mb-5"><a class="active hover:text-pinkish active:text-pinkish" href="works.html">Works</a></li>
+                <li class="mb-5"><a class="hover:text-pinkish active:text-pinkish" href="blog.html">Blog</a></li>
                 <li><a class="hover:text-pinkish active:text-pinkish" href="#">Contact</a></li>
             </ul>
         </nav>
@@ -86,5 +89,6 @@
             <p class="text-center">Copyright &copy2020 All rights reserved</p>
         </footer>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
